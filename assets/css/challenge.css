@@ -1,0 +1,159 @@
+/* font import */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
+/* Body background */
+
+body{
+	background: #050711;
+}
+
+/* Navbar top and navbar */
+
+.navbar-border{
+	border-bottom: 2px solid #00FFFF;
+	background-image: linear-gradient(top, red, red 70%, transparent 70%, transparent 100%)
+}
+
+.navbar-top{
+	background: #050711;
+	text-decoration: none;
+	padding: 20px;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
+
+.navbar-top .navbar-nav .nav-item .nav-link {
+    color: #cccccc;
+}
+
+.navbar-sec{
+	background: #101325;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-sec .navbar-nav .nav-item .nav-link {
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/* Table styles */
+
+table{
+	width: 80%;
+	font-family: 'Montserrat', sans-serif;
+	height: 80px; 
+}
+
+.tab-top table, td, th{
+	text-align: center;
+}
+
+
+.tab-top th{
+	color:#cccccc;
+	font-size: 15px !important;
+	padding: 0;
+}
+
+.stats-tab th{
+	font-size: 16px !important;
+	text-align: left;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.stats-tab td{
+	text-align: left;
+	padding: 10px;
+}
+
+/* Tabs style */
+
+#myTab{
+	padding-top:20px; 
+    color: #eee;
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    margin-left: 15px;
+}
+
+#myTabContent{
+	padding-left: 20px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#myTab h6.section-title{
+    color: #eee;
+}
+
+#myTab .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link {
+    color: #f3f3f3;
+    font-size: 20px;
+    font-weight: bold;
+    background:none !important;
+    border:none !important;
+    font-size: 15px;
+}
+
+a.active.nav-link{color: #1bfbe4 !important;}
+
+#myTab .nav-tabs .nav-link {
+    color: #eee;
+    font-size: 20px;
+}
+
+#wrapper {
+    overflow-x: hidden;
+}
+
+.list-group-item{
+	background: #050711;
+	padding: 25px;
+}
+.list-group-item:hover{	
+	background: #101325;
+	border-radius: 10px;
+}
+
+#sidebar-wrapper {
+	background: #050711;
+}
+
+#sidebar-wrapper .sidebar-heading {
+	padding-top: 60px;
+}
+
+#page-content-wrapper {
+	min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+	margin-left: 0;
+}
+
+/* Cards style */
+
+.card{
+	background-color: #101325;
+	border-radius: 10px;
+	width:100%;
+  	height:auto;
+  	margin-bottom: 10px;
+}
+
+.dropdown-toggle::after{
+    font-size:20px;
+}
+
+/* Responsive */
+
+@media (min-width: 768px) {
+	#page-content-wrapper {
+		min-width: 0;
+	    width: 100%;
+	}
+}

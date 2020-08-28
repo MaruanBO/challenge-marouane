@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<title>Challenge Marouane</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="./assets/css/challenge.css">
+</head>
+<body>
+	<!-- Navbar top and subnavbar Content -->
+	<header>
+		<nav class="navbar navbar-top navbar-border navbar-dark navbar-expand-lg">
+	      <div class="container">
+	        <a class="navbar-brand" href="#"><img src="./assets/icons/logo.png" width="120"></a>
+	        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-top" aria-controls="navbar-top" aria-expanded="false" aria-label="Toggle navigation">
+	          <span class="navbar-toggler-icon"></span>
+	        </button>
+	        <div class="collapse navbar-collapse" id="navbar-top">
+	          <ul class="navbar-nav mx-auto">
+	            <li class="nav-item">
+	              <a class="nav-link" href="#">ACCOUNT <span class="sr-only">(current)</span></a>
+	            </li>
+	            <li class="nav-item">
+	              <a class="nav-link" href="#">CHARTS</a>
+	            </li>
+	            <li class="nav-item">
+	              <a class="nav-link" href="#">HELP</a>
+	            </li>
+	          </ul>
+	          <a class="elsa" href="">Elsa</a>
+	        </div>
+	      </div>
+	    </nav>
+	    <nav class="navbar navbar-sec navbar-expand-lg navbar-dark">
+	      <div class="container">
+				<li class="nav-item dropdown" style="list-style: none;">
+	            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown08" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#cccccc;">OVERVIEW</a>
+	            <div class="dropdown-menu" aria-labelledby="dropdown08">
+	              <a class="dropdown-item" href="#">Action</a>
+	              <a class="dropdown-item" href="#">Another action</a>
+	              <a class="dropdown-item" href="#">Something else here</a>
+	            </div>
+	          </li>
+	        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-sec" aria-controls="navbar-sec" aria-expanded="false" aria-label="Toggle navigation">
+	          <span class="navbar-toggler-icon"></span>
+	        </button>
+	        <div class="collapse navbar-collapse" id="navbar-sec">
+	          <table class="mx-auto tab-top">
+	          	<tr>
+	          		<th>Total singups</th>
+	          		<th>Last week</th>
+	          		<th>Total investment</th>
+	          		<th>Average investment</th>
+	          		<th>Total exists</th>
+	          	</tr>
+	          	<tr>
+	          		<td style="color:#4effa1;font-size: 25px;font-weight: bold">648</td>
+	          		<td style="color:#ff56ee;font-size: 25px;font-weight: bold">12</td>
+	          		<td style="color:#1bfbe4;font-size: 25px;font-weight: bold">102</td>
+	          		<td style="color:#4effa1;font-size: 25px;">NOK <span style="font-weight: bold">345,565</span></td>
+	          		<td style="color:#ff56ee;font-size: 25px;font-weight: bold">23</td>
+	          	</tr>
+	          </table>
+	        </div>
+	      </div>
+	    </nav>
+	</header>
+	<!-- /# Navbar top and subnavbar Content -->
+
+	<div class="container">
+
+		<div class="d-flex" id="wrapper">
+	    <!-- Sidebar -->
+	    <div id="sidebar-wrapper">
+	      <div class="sidebar-heading"></div>
+	      <div class="list-group list-group-flush" style="">
+	        <a href="#" class="list-group-item list-group-item-action" style=""><img src="./assets/icons/group174.svg" width="40"></a>
+	        <a href="#" class="list-group-item list-group-item-action"><img src="./assets/icons/funds.svg" width="40"></a>
+	        <a href="#" class="list-group-item list-group-item-action"><img src="./assets/icons/path188.svg" width="40"></a>
+	        <a href="#" class="list-group-item list-group-item-action"><img src="./assets/icons/history.svg" width="40"></a>
+	        <a href="#" class="list-group-item list-group-item-action"><img src="./assets/icons/verification-window-button.svg" width="40"></a>
+	        <a href="#" class="list-group-item list-group-item-action"><img src="./assets/icons/locked-padlock.svg" width="40"></a>
+	      </div>
+	    </div>
+	    <!-- /#sidebar-wrapper -->
+
+	    <!-- Page Content -->
+	    <div id="page-content-wrapper">
+	    	<!-- Tab Content -->
+			<div class="col-xl-12 mb-4 mb-xl-0">
+				<ul class="nav flex-column flex-md-row nav-tabs" id="myTab" role="tablist">
+				  <li class="nav-item">
+				    <a class="nav-link active" id="singups-tab" data-toggle="tab" href="#singups" role="tab" aria-controls="singups" aria-selected="true">Singups</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" id="investment-tab" data-toggle="tab" href="#investment" role="tab" aria-controls="investment" aria-selected="false">Investments</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" id="revenue-tab" data-toggle="tab" href="#revenue" role="tab" aria-controls="revenue" aria-selected="false">Revenue</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" id="exists-tab" data-toggle="tab" href="#exists" role="tab" aria-controls="exists" aria-selected="false">Exists</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" id="trades-tab" data-toggle="tab" href="#trades" role="tab" aria-controls="trades" aria-selected="false">Trades</a>
+				  </li>
+				</ul>
+					<div class="tab-content" id="myTabContent">
+					  	<div class="tab-pane fade show active" id="singups" role="tabpanel" aria-labelledby="singups-tab">
+							<div class="row d-block">
+								<div class="col-xs-12 col-lg-6 col-md-4 col-sm float-left">
+									<div class="card border-0">
+										<div class="card-body">
+										<canvas id="individuals"></canvas>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm col-xs-12 col-lg-6 col-md-4  col-sm col-xs-12 float-left">	
+									<div class="card border-0 text-white">
+										<div class="card-body">
+											<canvas id="total_singups"></canvas>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm col-xs-12 col-lg-6 col-md-4  float-left">	
+									<div class="card border-0 text-white">
+										<div class="card-body">
+											<canvas id="companies"></canvas>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-4  col-sm col-xs-12 float-left">	
+									<div class="card border-0  text-white">
+										<div class="card-body">
+										<table>
+											<th>
+												<td>
+											        <a class="nav-link" href="http://example.com" style="list-style: none;font-weight: bold;font-size:15px;;color: #cccccc;">By Gender</a>
+											      </td>
+												<td>
+													<li class="nav-item dropdown" style="list-style: none;font-weight: bold;font-size:15px;">
+											            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown08" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#cccccc;">Female</a>
+											            <div class="dropdown-menu" aria-labelledby="dropdown08">
+											              <a class="dropdown-item" href="#">Action</a>
+											              <a class="dropdown-item" href="#">Another action</a>
+											              <a class="dropdown-item" href="#">Something else here</a>
+											            </div>
+											          </li>
+												</td>
+												<td>
+													<li class="nav-item dropdown" style="list-style: none;font-weight: bold;font-size:15px;">
+											            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown08" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#cccccc;">Individuals</a>
+											            <div class="dropdown-menu" aria-labelledby="dropdown08">
+											              <a class="dropdown-item" href="#">Action</a>
+											              <a class="dropdown-item" href="#">Another action</a>
+											              <a class="dropdown-item" href="#">Something else here</a>
+											            </div>
+											          </li>		
+												</td>
+												<td style="list-style: none;color:#4effa1;font-weight: bold;font-size: 15px;">102</td>
+											</th>
+										</table>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-4  col-sm col-xs-12 float-right">	
+									<div class="card border-0 text-white">
+										<div class="card-body">
+											<table class="stats-tab">
+												<caption style="caption-side: top; padding:10px;">Latests singups</caption>
+												<tr >
+													<th>Name</th>
+													<th>Scheduled Meeting</th>
+												</tr>
+												<tr style="font-size: 15px;">
+													<td>David Hansen</td>
+													<td>02-03-2020 - 2PM</td>
+												</tr>
+
+												<tr style="font-size: 15px;">
+													<td>Shopify</td>
+													<td>05-03-2020 - 10:30AM</td>
+												</tr>
+												<tr style="font-size: 15px;">
+													<td>Arvid, Realtree AB</td>
+													<td>05-03-2020 - 3PM</td>
+												</tr>							
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+				    	</div>
+					</div>
+					<div class="tab-pane fade" id="investment" role="tabpanel" aria-labelledby="investment-tab"></div>
+					<div class="tab-pane fade" id="revenue" role="tabpanel" aria-labelledby="revenue-tab"></div>
+					<div class="tab-pane fade" id="exists" role="tabpanel" aria-labelledby="exists-tab"></div>
+					<div class="tab-pane fade" id="trades" role="tabpanel" aria-labelledby="trades-tab"></div>
+				</div>
+			</div>
+		</div>	
+	</div>
+
+    <!-- /#page-content-wrapper -->
+  	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<script src="./assets/js/challenge.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+</body>
+</html>
